@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #f5f6f8;
+  color: #222;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #0f172a;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h2 {
+  color: #38bdf8;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== SEARCH BAR ===== */
+.search-box {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+/* ===== PRODUCTS PAGE ===== */
+.products-page {
+  padding: 20px;
+}
+
+/* ===== FILTERS ===== */
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ===== PRODUCT CARD ===== */
+.card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ===== BUTTON ===== */
+.card button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #1e40af;
+}
+
+/* ===== CART PAGE ===== */
+.cart-page {
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

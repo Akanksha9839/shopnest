@@ -1,0 +1,15 @@
+.cart-page {
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 15px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  width: 100px;
+}
